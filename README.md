@@ -8,7 +8,7 @@ Some screenshot from this project
 ## Built by
 This project built by
 <ol>
-  <li> Thanaphat Rujichananthasakul </li>
+  <li> Thanaphat Rujichananthakul </li>
   <li> Pitchaya Pimmahasiri </li>
 </ol>
 
