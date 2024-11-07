@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart | Ramen Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+
+<body onload="startTime()">
+    <div class="container-2">
+        <!-- header -->
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="Images/iconRamen.png" alt="">
+                </a>
+            </div>
+            <div class="title">
+                Order &nbsp; Cart
+            </div>
+            <div class="language">
+                <div class="lang-thai">
+                    <a href="menu-th.html"><img src="Images/Thaiflag.jpg" alt=""></a>
+                </div>
+                <div class="lang-eng">
+                    <a href="menu.html"><img src="Images/Engflag.png" alt=""></a>
+                </div>
+            </div>
+            <div class="time">
+                <div id='txt'></div>
+            </div>
+        </div>
+
+        <!-- body -->
+        <div class="content-container">
+            <center>
+             <div class="cart-container">
+                <div class="order-detail-container">
+                    <div class="order">
+                        <img src="Images/Ramen-full.png" alt="">
+                    </div>
+                    <div class="detail">
+                        <b> #1 - Miso Ramen </b><br>
+                        ( Ramen, Miso, Pork, Mild, Boiled egg, Menma, Wakame )
+                    </div>
+                </div>
+                <div class="under-detail">
+                    <div class="order-price">
+                        Price &nbsp;&nbsp; 85.00 ฿
+                    </div>
+                    <div class="add-del">
+                        <i class="uil uil-plus-circle"></i>
+                        <span class="order-count"> 1 </span>
+                        <i class="uil uil-minus-circle"></i> &ensp;
+                        <i class="uil uil-trash-alt" id="trash"></i>
+                    </div>
+                </div>
+             </div>
+            <div class="con-ordering">
+                <a href="menu.html"><i class="uil uil-plus-circle"></i></a>
+            </div>
+            </center>
+
+            <div class="cart-total">
+                Total &nbsp; Price (฿) - 85.00 <br>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div class="footer-container">
+            <div class="return">
+                <div class="footer-text">
+                    <a href="index.html">
+                        <input type="reset" value="Cancel" name="return" id="rtn-2">
+                    </a>
+                </div>
+            </div>
+            <div class="checkout">
+                <div class="footer-text">
+                    <a href="checkout.html">
+                        <input type="submit" value="Check out" name="checkout" id="sbm-2">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
