@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment | Ramen Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+
+<body onload="startTime()">
+    <div class="container-2">
+        <!-- header -->
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="Images/iconRamen.png" alt="">
+                </a>
+            </div>
+            <div class="title">
+                Payment
+            </div>
+            <div class="language">
+                <div class="lang-thai">
+                    <a href="menu-th.html"><img src="Images/Thaiflag.jpg" alt=""></a>
+                </div>
+                <div class="lang-eng">
+                    <a href="menu.html"><img src="Images/Engflag.png" alt=""></a>
+                </div>
+            </div>
+            <div class="time">
+                <div id='txt'></div>
+            </div>
+        </div>
+
+        <!-- body -->
+        <div class="content-container">
+            <center>
+                <div class="total-order-container">
+                    <div class="total-title">
+                        <span> # </span>
+                        <span> Order &nbsp; Details </span>
+                        <span> Unit &nbsp; Price </span>
+                        <span> Amount </span>
+                        <span> Price </span>
+                    </div>
+                    <div class="total-detail">
+                        <span> 1 </span>
+                        <span> Miso Ramen ( Ramen, Miso, Pork, Mild, Boiled egg, Menma, Wakame ) </span>
+                        <span> 85.00 </span>
+                        <span> 2 </span>
+                        <span> 170.00 </span>
+
+                        <span> 2 </span>
+                        <span> Tonkotsu Udon ( Udon, Tonkotsu, Beef, Hot, Boiled egg, Shashu, Wakame ) </span>
+                        <span> 95.00 </span>
+                        <span> 1 </span>
+                        <span> 95.00 </span>
+
+                        <span> 3 </span>
+                        <span> Miso Ramen ( Ramen, Miso, Pork, Mild, Boiled egg, Menma, Wakame ) </span>
+                        <span> 85.00 </span>
+                        <span> 1 </span>
+                        <span> 85.00 </span>
+                    </div>
+                    <div class="total-footer">
+                        <span> Total &nbsp; Price (฿) </span>
+                        <span> 350.00 Baht </span>
+                    </div>
+                </div>
+
+                <div class="qrcode">
+                    <center><img src="Images/myqr.jpg" alt=""></center>
+                    <span class="qrtext"> Scan for pay<br>Thank you </span>
+                    <div class="pay">
+                        <input type="text" name="pay" id="pay">
+                    </div>
+                </div>
+            </center>
+        </div>
+
+        <!-- footer -->
+        <div class="footer-container">
+            <div class="return">
+                <div class="footer-text">
+                    <a href="index.html">
+                        <input type="reset" value="Cancel" name="return" id="rtn-3">
+                    </a>
+                </div>
+            </div>
+            <div class="confirm-receipt">
+                <div class="footer-text">
+                    <a href="receipt.html">
+                        <input type="submit" value="Confirm" id="sbm-3">
+                    </a>
+                </div>
+            </div>
+        </div>
+    <script src="app.js"></script>
+</body>
+</html>

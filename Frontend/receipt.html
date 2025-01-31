@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receipt | Ramen Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+
+<body onload="startTime()">
+    <div class="container-2">
+        <!-- header -->
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="Images/iconRamen.png" alt="">
+                </a>
+            </div>
+            <div class="title">
+                Order &nbsp; Receipt
+            </div>
+            <div class="language">
+                <div class="lang-thai">
+                    <a href="menu-th.html"><img src="Images/Thaiflag.jpg" alt=""></a>
+                </div>
+                <div class="lang-eng">
+                    <a href="menu.html"><img src="Images/Engflag.png" alt=""></a>
+                </div>
+            </div>
+            <div class="time">
+                <div id='txt'></div>
+            </div>
+        </div>
+
+        <!-- body -->
+        <div class="content-container">
+            <div class="receipt">
+                <img src="Images/reciept.png" alt="">
+                <span class="receipt-detail-top">
+                    <center>
+                        <b> Order No. </b><br>
+                        <b style="font-size: 30px;"> 7382 </b><br><br>
+                        Ramen Rajai - Restaurant<br>
+                        Tel. 077-837-9855<br>
+                        ________________________________<br>
+                    </center>
+                </span>
+                <span class="receipt-detail">
+                    Date & Time : 22 March 2024 - 17:05<br>
+                    Type : Dine-in <br>
+                    Payment Method : QR Code <br>
+                    &emsp;&emsp;&ensp;_____________________________________ <br><br>
+                    <span class="menu">
+                        2 &emsp; Miso Ramen<br>
+                        &emsp;&emsp; ( Ramen, Miso, Pork, Mild, Boiled egg, Menma, Wakame ) <br>
+                        1 &emsp; Tonkotsu Ramen <br>
+                        &emsp;&emsp; ( Udon, Tonkotsu, Beef, Hot, Boiled egg, Shashu, Wakame ) <br>
+                        1 &emsp; Miso Ramen <br>
+                        &emsp;&emsp; ( Ramen, Miso, Pork, Mild, Boiled egg, Menma, Wakame ) <br>
+                    </span>
+                </span>
+                <span class="receipt-detail-price">
+                    170.00 <br><br>
+                    95.00 <br><br>
+                    85.00 <br><br>
+                    <br><b> Total Price &emsp;&emsp;&ensp; 350.00 </b>
+                </span>
+                <span class="receipt-detail-bottom">
+                    <center>
+                        Thank you for coming <br>
+                        Enjoy your meal ♡
+                    </center>
+                </span>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div class="footer-container">
+            <div class="success">
+                <a href="index.html">
+                    <input type="submit" value="Success" id="sbm-4">
+                </a>
+            </div>
+        </div>
+    <script src="app.js"></script>
+</body>
+</html>

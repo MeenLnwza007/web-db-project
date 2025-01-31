@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | Ramen Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+
+<body onload="startTime()">
+    <div class="container-1">
+        <!-- header -->
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="Images/iconRamen.png" alt="">
+                </a>
+            </div>
+            <div class="title">
+                Choose &nbsp; Your &nbsp; Ingredients
+            </div>
+            <div class="language">
+                <div class="lang-thai">
+                    <a href="menu-th.html"><img src="Images/Thaiflag.jpg" alt=""></a>
+                </div>
+                <div class="lang-eng">
+                    <a href="menu.html"><img src="Images/Engflag.png" alt=""></a>
+                </div>
+            </div>
+            <div class="time">
+                <div id='txt'></div>
+            </div>
+        </div>
+
+        <!-- sidebar -->
+        <div class="sidebar-container">
+            <nav>
+                <div class="tab">
+                    <ul class="filter-container">
+                        <li class="filter">
+                            <a href="#noodles"> Noodles </a>
+                        </li>
+                        <li class="filter">
+                            <a href="#soup"> Soup </a>
+                        </li>
+                        <li class="filter">
+                            <a href="#soup"> meat </a>
+                        </li>
+                        <li class="filter">
+                            <a href="#soup"> spicy </a>
+                        </li>
+                        <li class="filter">
+                            <a href="#soup"> topping </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <!-- content -->
+        <div class="content-container">
+            <!-- noodles -->
+            <div id="noodles">
+                <div class="ingredients-container">
+                    <div class="item">
+                        <div class="util">
+                            <input type="radio" name="noodles" id="rdh1">
+                            <label for="rdh1">
+                                <i class="uil uil-heart" aria-hidden="true"></i>
+                            </label>
+                        </div>
+                        <img src="Images/Ramen-noodles.png" alt="">
+                        <div class="describe">
+                            Ramen <br> 10 ฿
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="util">
+                            <input type="radio" name="noodles" id="rdh2">
+                            <label for="rdh2">
+                                <i class="uil uil-heart" aria-hidden="true"></i>
+                            </label>
+                        </div>
+                        <img src="Images/Udon-noodles.png" alt="">
+                        <div class="describe">
+                            Udon <br> 10 ฿
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="util">
+                            <input type="radio" name="noodles" id="rdh3">
+                            <label for="rdh3">
+                                <i class="uil uil-heart" aria-hidden="true"></i>
+                            </label>
+                        </div>
+                        <img src="Images/Soba-noodles.png" alt="">
+                        <div class="describe">
+                            Soba <br> 10 ฿
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="util">
+                            <input type="radio" name="noodles" id="rdh4">
+                            <label for="rdh4">
+                                <i class="uil uil-heart" aria-hidden="true"></i>
+                            </label>
+                        </div>
+                        <img src="Images/Somen-noodles.png" alt="">
+                        <div class="describe">
+                            Somen <br> 10 ฿
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="util">
+                            <input type="radio" name="noodles" id="rdh5">
+                            <label for="rdh5">
+                                <i class="uil uil-heart" aria-hidden="true"></i>
+                            </label>
+                        </div>
+                        <img src="Images/Shirataki-noodles.png" alt="">
+                        <div class="describe">
+                            Shirataki <br> 10 ฿
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- soup -->
+            <div id="soup">
+                <div class="ingredients-container">
+                    <div class="item">
+                        <div class="util">
+                            <input type="radio" name="soup" id="rdh6">
+                            <label for="rdh6">
+                                <i class="uil uil-heart" aria-hidden="true"></i>
+                            </label>
+                        </div>
+                        <img src="Images/Tonkotsu-soup.png" alt="">
+                        <div class="describe">
+                            Tonkotsu <br> 30 ฿
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="util">
+                            <input type="radio" name="soup" id="rdh7">
+                            <label for="rdh7">
+                                <i class="uil uil-heart" aria-hidden="true"></i>
+                            </label>
+                        </div>
+                        <img src="Images/Miso-soup.png" alt="">
+                        <div class="describe">
+                            Miso <br> 30 ฿
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="util">
+                            <input type="radio" name="soup" id="rdh8">
+                            <label for="rdh8">
+                                <i class="uil uil-heart" aria-hidden="true"></i>
+                            </label>
+                        </div>
+                        <img src="Images/Shoyu-soup.png" alt="">
+                        <div class="describe">
+                            Shoyu <br> 30 ฿
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- meat -->
+            <div id="meat">
+                <div class="ingredients-container">
+                    <div class="item">
+                        <div class="util">
+                            <input type="radio" name="meat" id="rdh9">
+                            <label for="rdh9">
+                                <i class="uil uil-heart" aria-hidden="true"></i>
+                            </label>
+                        </div>
+                        <img src="Images/Chicken-meat.png" alt="">
+                        <div class="describe">
+                            <br> Chicken <br> 5 ฿
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="util">
+                            <input type="radio" name="meat" id="rdh10">
+                            <label for="rdh10">
+                                <i class="uil uil-heart" aria-hidden="true"></i>
+                            </label>
+                        </div>
+                        <img src="Images/Pork-meat.png" alt="">
+                        <div class="describe">
+                            <br> Pork <br> 5 ฿
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="util">
+                            <input type="radio" name="meat" id="rdh11">
+                            <label for="rdh11">
+                                <i class="uil uil-heart" aria-hidden="true"></i>
+                            </label>
+                        </div>
+                        <img src="Images/Beef-meat.png" alt="">
+                        <div class="describe">
+                            <br> Beef <br> 10 ฿
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- spicy -->
+            <div id="spicy">
+                <div class="ingredients-container">
+                    <div class="item">
+                        <div class="util">
+                            <input type="radio" name="spicy" id="rdh12">
+                            <label for="rdh12">
+                                <i class="uil uil-heart" aria-hidden="true"></i>
+                            </label>
+                        </div>
+                        <img src="Images/Mild-spice.png" alt="">
+                        <div class="describe">
+                            <br> Mild
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="util">
+                            <input type="radio" name="spicy" id="rdh13">
+                            <label for="rdh13">
+                                <i class="uil uil-heart" aria-hidden="true"></i>
+                            </label>
+                        </div>
+                        <img src="Images/Spicy-spice.png" alt="">
+                        <div class="describe">
+                            <br> Spicy
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="util">
+                            <input type="radio" name="spicy" id="rdh14">
+                            <label for="rdh14">
+                                <i class="uil uil-heart" aria-hidden="true"></i>
+                            </label>
+                        </div>
+                        <img src="Images/Hot-spice.png" alt="">
+                        <div class="describe">
+                            <br> Hot
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- topping -->
+            <div id="topping">
+                <div class="ingredients-container">
+                    <div class="item">
+                        <div class="util">
+                            <input type="checkbox" name="topping" id="cbh1">
+                            <label for="cbh1">
+                                <i class="uil uil-heart" aria-hidden="true"></i>
+                            </label>
+                        </div>
+                        <img src="Images/Boilegg.png" alt="">
+                        <div class="describe">
+                            <br> Boiled egg <br> 10 ฿
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="util">
+                            <input type="checkbox" name="topping" id="cbh2">
+                            <label for="cbh2">
+                                <i class="uil uil-heart" aria-hidden="true"></i>
+                            </label>
+                        </div>
+                        <img src="Images/Shashu.png" alt="">
+                        <div class="describe">
+                            <br> Shashu <br> 25 ฿
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="util">
+                            <input type="checkbox" name="topping" id="cbh3">
+                            <label for="cbh3">
+                                <i class="uil uil-heart" aria-hidden="true"></i>
+                            </label>
+                        </div>
+                        <img src="Images/Menma.png" alt="">
+                        <div class="describe">
+                            <br> Menma <br> 20 ฿
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="util">
+                            <input type="checkbox" name="topping" id="cbh4">
+                            <label for="cbh4">
+                                <i class="uil uil-heart" aria-hidden="true"></i>
+                            </label>
+                        </div>
+                        <img src="Images/Mushroom.png" alt="">
+                        <div class="describe">
+                            <br> Mushroom <br> 10 ฿
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="util">
+                            <input type="checkbox" name="topping" id="cbh5">
+                            <label for="cbh5">
+                                <i class="uil uil-heart" aria-hidden="true"></i>
+                            </label>
+                        </div>
+                        <img src="Images/Narutomaki.png" alt="">
+                        <div class="describe">
+                            <br> Narutomaki <br> 10 ฿
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="util">
+                            <input type="checkbox" name="topping" id="cbh6">
+                            <label for="cbh6">
+                                <i class="uil uil-heart" aria-hidden="true"></i>
+                            </label>
+                        </div>
+                        <img src="Images/Cabbages.png" alt="">
+                        <div class="describe">
+                            <br> Cabbage <br> 10 ฿
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="util">
+                            <input type="checkbox" name="topping" id="cbh7">
+                            <label for="cbh7">
+                                <i class="uil uil-heart" aria-hidden="true"></i>
+                            </label>
+                        </div>
+                        <img src="Images/Wakame.png" alt="">
+                        <div class="describe">
+                            <br> Wakame <br> 10 ฿
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div class="footer-container">
+            <div class="return">
+                <div class="footer-text">
+                    <a href="index.html">
+                        <input type="reset" value="Return" name="return" id="rtn-1">
+                    </a>
+                </div>
+            </div>
+            <div class="confirm">
+                <div class="util-cart">
+                    <i class="uil uil-shopping-cart-alt"></i>
+                    <span class="cart-number"> 0 </span>
+                    <div class="total"> (total 00.00 ฿) </div>
+                </div>
+                <div class="footer-text">
+                    <a href="cart.html">
+                        <input type="submit" value="Confirm" name="confirm" id="sbm-1">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
